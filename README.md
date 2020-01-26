@@ -11,5 +11,14 @@ Instalações:
 -Visual Studio Code:  
 -AngularCLI: $sudo npm install -g @angular/cli  
 
-$ng -v  
+$ng -v
+
+Primeira app (HelloWorld)
+
+$ng new PROJECT_NAME  
+$cd PROJECT_NAME  
+$ng serve  
+
+http://localhost:4200/
+
  
