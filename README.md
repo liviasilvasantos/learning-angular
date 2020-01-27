@@ -55,3 +55,9 @@ $tsc main.ts
 ```
 
 Será gerado o arquivo js pelo transpiler do typescript.
+
+## Trabalhando com módulos (module)
+
+```
+$ng g m nome-modulo
+```
