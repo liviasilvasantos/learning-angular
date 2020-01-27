@@ -44,6 +44,7 @@ $ng serve
 
 ```
 $ng g c nome-componente
+```
 
 ## Primeiro typescript
 
