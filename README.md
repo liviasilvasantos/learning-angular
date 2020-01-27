@@ -61,3 +61,9 @@ Será gerado o arquivo js pelo transpiler do typescript.
 ```
 $ng g m nome-modulo
 ```
+
+## Trabalhando com serviços (services)
+
+```
+$ng g s nome-servico
+```
