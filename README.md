@@ -44,3 +44,13 @@ $ng serve
 
 ```
 $ng g c nome-componente
+
+## Primeiro typescript
+
+Criar arquivo main.ts e compilar:
+
+```
+$tsc main.ts
+```
+
+Será gerado o arquivo js pelo transpiler do typescript.
