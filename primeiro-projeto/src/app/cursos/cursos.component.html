@@ -1,2 +1,11 @@
 <p style="color: purple;">cursos component!</p>
-<app-curso-detalhe></app-curso-detalhe>
+<p>
+    Lista de cursos do portal {{ nomeDoPortal }}
+</p>
+
+<ul>
+    <li *ngFor="let c of cursos">
+        {{ c }}
+    </li>
+</ul>
+<!-- <app-curso-detalhe></app-curso-detalhe> -->
