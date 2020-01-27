@@ -29,6 +29,7 @@ $ng -v
 ```
 
 ## Primeira app (HelloWorld)
+
 ```
 $ng new PROJECT_NAME  
 $cd PROJECT_NAME  
@@ -37,4 +38,9 @@ $ng serve
 
 > http://localhost:4200/
 
+### Gerando o componente manualmente
 
+### Gerando o componente via angular-cli
+
+```
+$ng g c nome-componente
