@@ -67,3 +67,7 @@ $ng g m nome-modulo
 ```
 $ng g s nome-servico
 ```
+
+## Bootstrap
+
+Para adicionar bootstrap no seu projeto Angular, usar as instruções em https://valor-software.com/ngx-bootstrap/#/documentation#getting-started.
