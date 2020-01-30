@@ -91,3 +91,13 @@ $ng new projeto_novo
 $cd projeto_novo
 ```
 
+## Criando arquivos
+
+**Component**: ng generate component meu-componente ou ng g c meu-componente  
+**Service**: ng generate service meu-servico ou ng g s meu-servico  
+**Directive**: ng generate directive minha-diretiva ou ng g d minha-diretiva 
+**Pipe**: ng generate pipe meu-pipe ou ng g p meu-pipe 
+**Class**: ng generate class minha-classe ou ng g class minha-classe 
+**Interface**: ng generate interface minha-interface ou ng g interface minha-interface 
+**Enum**: ng generate enum meu-enum ou ng g enum meu-enum  
+
