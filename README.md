@@ -71,3 +71,23 @@ $ng g s nome-servico
 ## Bootstrap
 
 Para adicionar bootstrap no seu projeto Angular, usar as instruções em https://valor-software.com/ngx-bootstrap/#/documentation#getting-started.
+
+## Angular/Cli
+
+Para dicas de instalação e documentação, ver https://github.com/angular/angular-cli.
+
+Para criar um projeto em um diretório que já existe:
+
+```
+$mkdir projeto_novo
+$cd projeto_novo
+$ng init 
+```
+
+Para criar um novo projeto, e deixar o angular/cli criar o diretório:
+
+```
+$ng new projeto_novo
+$cd projeto_novo
+```
+
