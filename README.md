@@ -101,3 +101,22 @@ $cd projeto_novo
 **Interface**: ng generate interface minha-interface ou ng g interface minha-interface  
 **Enum**: ng generate enum meu-enum ou ng g enum meu-enum   
 
+
+## ng lint
+
+Faz um scan no projeto e verifica por boas práticas do style guide. No Windows, precisei instalar o lint:
+
+```
+$cd projeto
+$npm install -g tslint
+$npm update
+$ng lint
+```
+
+## ng test
+
+Executa os testes unitários com Jasmine (arquivos com extensão .spec.ts, que não gerados automaticamente ao usar ng g).
+
+## ng e2e
+
+Executa os testes end-to-end com Protector.
