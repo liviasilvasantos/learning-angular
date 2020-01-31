@@ -120,3 +120,72 @@ Executa os testes unitários com Jasmine (arquivos com extensão .spec.ts, que n
 ## ng e2e
 
 Executa os testes end-to-end com Protector.
+
+### Angular CLI
+
+1. Cria toda a estrutura do projeto
+2. Gera página HTML inicial, arquivos Typescript iniciais, arquivos CSS e arquivos de testes unitários
+3. Cria arquivo package.json com todas as dependências do Angular
+
+    Projetos Angular são baseados do npm, ou seja, são projetos na estrutura node.js. 
+
+4. Instala todas as dependências do node (npm install)
+5. Configura o Karma para executar os testes unitários com Jasmine
+6. Configura Protractor para executar os testes end-to-end (e2e)
+7. Inicializa um repositório git no projeto e faz commit inicial
+8. Cria todos os arquivos necessários para fazer o build da aplicação para a produção
+
+O Angular usa o EmberCLI por baixo (cria os diretórios, build, etc)
+
+## Configurações
+
+### karma.conf.js
+
+Configurações específicas do Karma para a execução dos testes unitários.
+
+### e2e/protractor.conf.js
+
+Configurações específicas do Protractor para a execução dos testes end-to-end.
+
+### src/environments/environment.ts
+
+Configurações do ambiente de desenvolvimento/produção.
+
+### dist/
+
+Onde são gerados os artefatos de build da aplicação.
+
+### node_modules/
+
+Onde ficam todos os pacotes (bibliotecas e dependências do projeto) do npm instalados para a aplicação. Usa-se *npm install* para instalar as dependências ou *npm install --save* para instalar no node_modules e também atualizar o arquivo package.json. Por padrâo, é ignorado pelo git. 
+
+### src/
+
+Diretório do código-fonte da aplicação. Contém código typescript (*.ts), javascript (*.js), css, imagens e template html.
+
+### angular.json
+
+Contém informações sobre o projeto e build de produção, como nome do projeto.
+
+### tsconfig.json
+
+Contém configurações de onde encontrar os arquivos fontes do app, config de testes, etc. 
+
+### tslint.json
+
+Contém configurações para fazer lint do app.
+
+### package.json
+
+- dependencies: dependências necessárias para executar a aplicação.
+- devDependencies: dependências necessárias para desenvolver a aplicação (não necessários após do build de aplicação).
+
+**@angular/core**: pacote principal do Angular. Contém decorators e metadados, Component, Directive, injeção de dependência e os hooks de ciclo de vida do Component. 
+**@angular/common**: serviços, pipes e diretivas comuns fornecidas pelo time de dev do Angular.
+**@angular/compiler**: template de compilação do angular. Entende o código dos templates e converte em código que faz a app ser executada e renderizada. Desenvolvedores não integragem com esse pacote diretamente. 
+**@angular/forms**: contém todo o códiog para a construção de formulários com Angular. 
+**@angular/platform-browser**: contém todo o código relacionado ao DOM e ao browser, especialmente as partes que ajudam a renderizar o DOM. Esse pacote também contém o método para fazer o bootstrap da aplicação para builds de produção que pré-compila os templates. 
+**@angular/platform-browser-dynamic**: contém as providers e o método para iniciar as aplicações que compilam templates no lado do cliente. Não usa compilação offline. Usada para fazer bootstrap durante desenvolvimento e exemplos plunker. 
+**@angular/http**: fornece o cliente Http. 
+**@angular/router**: classes de roteamento. 
+
