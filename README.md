@@ -259,3 +259,12 @@ E configurar no arquivo angular.json:
     "./node_modules/materialize-css/dist/js/materialize.js"
 ]
 ```
+
+# Diretivas
+
+**Diretivas estruturais**  
+    Interagem com a view e modificam a estrutura do DOM e/ou código HTML (*ngFor, *ngIf).
+
+**Diretivas de atributos**  
+    Interagem com o elemento em que foram aplicadas (ng-class, ng-style).
+
