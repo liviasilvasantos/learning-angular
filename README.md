@@ -180,14 +180,14 @@ Contém configurações para fazer lint do app.
 - dependencies: dependências necessárias para executar a aplicação.
 - devDependencies: dependências necessárias para desenvolver a aplicação (não necessários após do build de aplicação).
 
-**@angular/core**: pacote principal do Angular. Contém decorators e metadados, Component, Directive, injeção de dependência e os hooks de ciclo de vida do Component. 
-**@angular/common**: serviços, pipes e diretivas comuns fornecidas pelo time de dev do Angular.
-**@angular/compiler**: template de compilação do angular. Entende o código dos templates e converte em código que faz a app ser executada e renderizada. Desenvolvedores não integragem com esse pacote diretamente. 
-**@angular/forms**: contém todo o códiog para a construção de formulários com Angular. 
-**@angular/platform-browser**: contém todo o código relacionado ao DOM e ao browser, especialmente as partes que ajudam a renderizar o DOM. Esse pacote também contém o método para fazer o bootstrap da aplicação para builds de produção que pré-compila os templates. 
-**@angular/platform-browser-dynamic**: contém as providers e o método para iniciar as aplicações que compilam templates no lado do cliente. Não usa compilação offline. Usada para fazer bootstrap durante desenvolvimento e exemplos plunker. 
-**@angular/http**: fornece o cliente Http. 
-**@angular/router**: classes de roteamento. 
+**@angular/core**: pacote principal do Angular. Contém decorators e metadados, Component, Directive, injeção de dependência e os hooks de ciclo de vida do Component.  
+**@angular/common**: serviços, pipes e diretivas comuns fornecidas pelo time de dev do Angular.  
+**@angular/compiler**: template de compilação do angular. Entende o código dos templates e converte em código que faz a app ser executada e renderizada. Desenvolvedores não integragem com esse pacote diretamente.  
+**@angular/forms**: contém todo o códiog para a construção de formulários com Angular.  
+**@angular/platform-browser**: contém todo o código relacionado ao DOM e ao browser, especialmente as partes que ajudam a renderizar o DOM. Esse pacote também contém o método para fazer o bootstrap da aplicação para builds de produção que pré-compila os templates.  
+**@angular/platform-browser-dynamic**: contém as providers e o método para iniciar as aplicações que compilam templates no lado do cliente. Não usa compilação offline. Usada para fazer bootstrap durante desenvolvimento e exemplos plunker.  
+**@angular/http**: fornece o cliente Http.  
+**@angular/router**: classes de roteamento.  
 
 ## Gerando build 
 
