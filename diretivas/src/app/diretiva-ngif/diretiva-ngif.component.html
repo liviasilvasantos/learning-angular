@@ -1,1 +1,34 @@
-<p>diretiva-ngif works!</p>
+<h5>*ngIf</h5>
+<p>Lembrando que o ngIf retira o elemento do DOM caso o resultado seja falso. E por questões de performance, fazer alterações na árvore DOM é muito custoso. </p>
+<p>Recomendado para árvore de elmeentos grandes.</p>
+
+<div *ngIf="cursos.length > 0">
+    Lista de cursos:
+</div>
+
+<div *ngIf="cursos.length == 0">
+    Não existem cursos para serem listados.
+</div>
+
+<div *ngIf="mostrarCursos">
+    Mostrar cursos.
+</div>
+<div *ngIf="!mostrarCursos">
+    Não mostrar cursos.
+</div>
+
+<br>
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+
+
+<br><br>
+
+<h5>hidden como alternativa</h5>
+<p>Recomendado para árvore de elementos pequenas.</p>
+
+<div [hidden]="!mostrarCursos">
+    Mostrar cursos.
+</div>
+<div [hidden]="mostrarCursos">
+    Não mostrar cursos.
+</div>

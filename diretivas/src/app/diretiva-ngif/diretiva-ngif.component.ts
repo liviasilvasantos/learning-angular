@@ -1,3 +1,4 @@
+import { CursoDetalheComponent } from './../../../../primeiro-projeto/src/app/cursos/curso-detalhe/curso-detalhe.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgifComponent implements OnInit {
 
+  cursos: string[] = ['Angular'];
+
+  mostrarCursos: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onMostrarCursos() {
+    this.mostrarCursos = !this.mostrarCursos;
+  }
 }
