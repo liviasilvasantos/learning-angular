@@ -219,3 +219,43 @@ Para executar em um servidor web do node, instalar o http-server:
 ```
 $ npm install http-server -g
 ```
+
+## Instalando biliotecas
+
+### Bootstrap e jquery
+
+```
+$ npm install bootstrap --save
+$ npm install jquery --save
+```
+
+E configurar no arquivo angular.json:
+
+```
+"styles": [
+    "src/styles.css",
+    "./node_modules/bootstrap/dist/css/bootstrap.css"
+],
+"scripts": [
+    "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.js"
+]
+```
+
+### Google Material Design
+
+```
+$npm install materialize-css --save
+```
+
+E configurar no arquivo angular.json:
+
+```
+"styles": [
+    "src/styles.css",
+    "./node_modules/materialize-css/dist/css/materialize.css"
+],
+"scripts": [
+    "./node_modules/materialize-css/dist/js/materialize.js"
+]
+```
