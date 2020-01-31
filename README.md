@@ -189,3 +189,31 @@ Contém configurações para fazer lint do app.
 **@angular/http**: fornece o cliente Http. 
 **@angular/router**: classes de roteamento. 
 
+## Gerando build 
+
+**Desenvolvimento**
+
+```
+$cd projeto
+$ng build --target=development --environment=dev
+$ng build --dev --e=dev
+$ng build --dev
+$ng build
+```
+
+**Produção**
+
+Obfusca e minifica o código JS da aplicação. CSS e templates HTML já minificados e incluídos em main.bundle.js.
+
+```
+$cd projeto
+$ng build --target=production --environment=prod
+$ng build --prod --e=prod
+$ng build --prod
+```
+
+Para executar em um servidor web do node, instalar o http-server:
+
+```
+$ npm install http-server -g
+```
