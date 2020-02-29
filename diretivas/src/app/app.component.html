@@ -34,9 +34,32 @@
         <app-diretiva-ngstyle></app-diretiva-ngstyle>
     </article>    
 </section>
-<section>
+<section style="display: none;">
     <article>
         <h3>Operador Elvis</h3>
         <app-operador-elvis></app-operador-elvis>
     </article>    
 </section>
+<section>
+    <article>
+        <h3>NgContent</h3>
+        <app-diretiva-ngcontent>
+            Conteúdo passado para o componente
+            <app-operador-elvis></app-operador-elvis>
+        </app-diretiva-ngcontent>
+    </article>    
+</section>
+<section>
+    <article>
+        <h3>NgContent com Selector</h3>
+        <app-diretiva-ngcontent>
+            <div class="titulo">Título 1 com Selector</div>
+            <div class="titulo">Título 2 com Selector</div>
+            <div class="corpo">
+                Conteúdo passado para o componente
+                <app-operador-elvis></app-operador-elvis>
+            </div>           
+        </app-diretiva-ngcontent>
+    </article>    
+</section>
+
