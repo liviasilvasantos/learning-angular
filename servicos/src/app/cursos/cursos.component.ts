@@ -9,6 +9,7 @@ import { CursosService } from './cursos.service';
 export class CursosComponent implements OnInit {
 
   cursos: string[] = [];
+  //cursos: string[] = ['Angular', 'Java', 'Phonegap'];
 
   //cursosService: CursosService;
 
